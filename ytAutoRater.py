@@ -77,7 +77,7 @@ def insert_comment(youtube, channel_id, video_id, text):
 
 
 def like_video(youtube, video, rate):
-    youtube.videos.rate(
+    youtube.videos().rate(
         rating=rate, id=video['snippet']['resourceId']['videoId']).execute()
     title = video['snippet']['title']
     print(f'Title : {title} \n rating : {rate} \n')
