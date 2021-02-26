@@ -84,6 +84,9 @@ def like_video(youtube, video, rate):
 
 
 # Main Program
+video_count = 0
 videos = get_channel_videos(channel_id)
 for video in videos:
+    video_count += 1
     like_video(youtube, video, 'like')
+print(f'Number of videos rated : {video_count}')
