@@ -14,7 +14,7 @@ SCOPES = ['https://www.googleapis.com/auth/youtube']
 api_key = 'AIzaSyCES0pNKa7VZ5bV0WssiO-q2gVwbWdINaE'
 # Channel ID can be retreived via url
 # NEEDS TO BE CHANGED FOR PARTICULAR CHANNEL
-channel_id = 'UChDX4wagpTQS0aTm4eyhJaw'
+channel_id = input('Enter the channel Id obtained via youtube URL ')
 
 ''' For Normal data analysis API KEY is sufficient'''
 #youtube = build('youtube', 'v3', developerKey=api_key)
